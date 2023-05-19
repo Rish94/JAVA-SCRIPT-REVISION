@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function hello(){
+            alert("Hello Bro Function")
+        }
+    </script>
+</head>
+<body onkeypress="hello()">
+    <button onclick="hello()">Click</button>
+
+    <!-- double click - (ondblclick) 
+    Right Clcik - (oncontextmenu)
+    Mouse Hover - (onmouseenter)
+    Mouseout - (onmouseout)
+    Mousedown (onmousedown) as a click event
+    mouseup - (onmouseup) click leave krte he func call
+    keypress - (onkeypress) // use in form or body tag
+    keyup - (onkeyup) // also work in body and form
+    Resize - (onresize)
+    scroll - (onscroll)
+    -->
+
+    <p ondblclick="hello()">Double CLick</p>
+
+    <p onmouseenter="hello()">Double CLick</p>
+</body>
+</html>

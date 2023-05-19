@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        //ye logic pura browser fredze krdeta he agar ham button bhe use krenge to click krne me prblm ayege
+
+            function delay(){
+    
+    
+                //esse code ko n times chalado to n sec ka delay create ho jayega
+    
+    
+                const x = new Date().getTime();
+    
+                //run 1 sec 1000 = 1sec
+                while(new Date().getTime()<x+1000){
+    
+                }
+    
+                //call after delay
+                fun();
+            }
+    
+    
+            function fun(){
+                for( let i=0;i<10;i++){
+                    document.write("<br>" + i );
+                }
+            }
+    
+            document.write("Start");
+            delay();
+            <!-- fun(); -->
+            document.write("<br>END");  
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
