@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+</head>
+<body>
+
+    <h1>DOM Manipulation</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates obcaecati delectus est velit cumque quos quam, molestias quod iure dolores repellat illum sint officiis recusandae voluptatem, tempora autem aliquid accusamus!</p>
+
+
+    <h5>Movies</h5>
+    <ul>
+        <li>Start War</li>
+        <li>SpiderMan</li>
+        <li>SitaRam</li>
+        <li>iron Man</li>
+        <li>Ek Tha Tiger</li>
+    </ul>
+
+
+    <ul>
+        <li><a href="http://google.com">Visit Goggle</li>
+            <li><a href="http://google.com">Visit Goggle</li>
+    </ul>
+    
+</body>
+
+
+
+<script>
+
+    const a = document.getElementsByTagName('h1')[0];
+    a.style.color = 'red';
+    a.style.backgroundColor='lightblue';
+
+
+    const li = document.querySelector('li:first-child');
+    console.log(li.innerHTML);
+    console.log(li.innerText);
+    console.log(li.textContent)
+
+
+
+    console.log(getAttribute('type'));
+    
+
+</script>
+
+
+
+</html>

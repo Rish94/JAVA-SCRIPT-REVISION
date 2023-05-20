@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+
+        
+
+        //ye call back hell tha
+
+        //Not a good way to write async code
+        //better waye is use promises
+
+
+        //after 3 sec downloaded file chala
+        function downloadFile(url,downloaded){
+
+            console.log(`Start Downloading from ${url}`);
+
+            setTimeout(()=>{
+
+                const ur = url.split('/').pop();
+                downloaded(ur);
+
+                <!-- console.log("File Downloaded"); -->
+            },3000);
+
+            
+        }
+
+
+        function CompressedFile(url,compress){
+            console.log("Start Compressing");
+
+            setTimeout(()=>{
+                const ur = url.split('.')[0] + '.zip';
+                compress(ur);
+            },3000)
+        }
+
+
+        downloadFile('http://facebook.com/profile.jpg',function (path){
+            console.log("File downloaded sucsessfully")
+
+
+            CompressedFile(path,function(ur){
+                console.log("Compression donne");
+            })
+        });
+
+
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
